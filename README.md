@@ -1,4 +1,4 @@
-\# 영미나이 (Gemini Chat Demo)
+# 영미나이 (Gemini Chat Demo)
 
 
 
@@ -12,7 +12,7 @@ Node.js 백엔드 + React(TypeScript, Vite) 프론트엔드로 구성된 간단�
 
 
 
-\#\# 1. 필수 요구사항
+## 1. 필수 요구사항
 
 
 
@@ -28,7 +28,7 @@ Node.js 백엔드 + React(TypeScript, Vite) 프론트엔드로 구성된 간단�
 
 
 
-\#\# 2. 프로젝트 구조
+## 2. 프로젝트 구조
 
 
 
@@ -44,9 +44,9 @@ gemini\_project/
 
 
 
-\#\# 3. 백엔드 실행 방법 (Node.js 서버)
+## 3. 백엔드 실행 방법 (Node.js 서버)
 
-\#\#\# 3-1. 의존성 설치
+### 3-1. 의존성 설치
 
 cd backend
 
@@ -54,7 +54,7 @@ npm install
 
 
 
-\#\#\# 3-2. 환경 변수(.env) 설정
+### 3-2. 환경 변수(.env) 설정
 
 
 
@@ -64,15 +64,15 @@ GEMINI\_API\_KEY="gemini api key 입력"
 
 
 
-\#\#\# 3-3. 서버 실행
+### 3-3. 서버 실행
 
 npm start
 
 
 
-\# 4. 프론트엔드 실행 방법 (React + Vite)
+# 4. 프론트엔드 실행 방법 (React + Vite)
 
-\#\#\# 4-1. 의존성 설치
+### 4-1. 의존성 설치
 
 cd front
 
@@ -80,7 +80,7 @@ npm install
 
 
 
-\#\#\# 4-2. 개발 서버 실행
+### 4-2. 개발 서버 실행
 
 npm run dev
 
