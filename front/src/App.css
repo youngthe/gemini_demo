@@ -1,0 +1,81 @@
+#root {
+  width: 50%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.textarea-wrapper textarea {
+  width: 100%;
+  min-height: 160px;
+  padding: 14px 18px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  /* 다크 배경 */
+  background: #1e1e2e;
+  color: #ffffff; /* 글씨 잘 보이게 */
+
+  font-size: 15px;
+  line-height: 1.5;
+  box-sizing: border-box;
+  outline: none;
+  resize: vertical;
+
+  /* 살짝 글래스 느낌 */
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.35),
+    inset 0 0 8px rgba(255, 255, 255, 0.04);
+
+  transition: all 0.2s ease;
+}
+
+/* 포커스 시 강조 효과 */
+.textarea-wrapper textarea:focus {
+  border-color: #6366f1;
+  background: #27273a;
+  box-shadow:
+    0 8px 25px rgba(99, 102, 241, 0.22),
+    0 0 0 2px rgba(99, 102, 241, 0.45);
+}
+
+/* placeholder 색상이 안 보이는 문제 개선 */
+.textarea-wrapper textarea::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
