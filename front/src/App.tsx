@@ -8,6 +8,11 @@ function App() {
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string>("");
 
+  // 🔸 카카오 로그인 버튼 클릭 시: 백엔드의 로그인 시작 URL로 이동
+  const handleKakaoLogin = () => {
+    window.location.href = "http://localhost:3001/login/kakao";
+  };
+
   const handleSend = async () => {
     if (!input.trim()) return;
 
@@ -58,9 +63,16 @@ function App() {
   return (
     <div className="app">
       <div className="chat-card">
-        <header className="chat-header">
+       <header className="chat-header">
           <div>
             <h1> 영미나이 </h1>
+          </div>
+
+          {/* 🔸 카카오 로그인 버튼을 우측으로 이동 */}
+          <div className="kakao-login-wrapper">
+            <button className="btn kakao-btn" onClick={handleKakaoLogin}>
+              대화 내용 카카오톡으로 전송
+            </button>
           </div>
         </header>
 
